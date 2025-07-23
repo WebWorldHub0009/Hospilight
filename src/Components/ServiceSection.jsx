@@ -3,43 +3,49 @@ import { FaLightbulb, FaRegHospital, FaMicroscope, FaSyringe, FaHeartbeat, FaSta
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import bg from "../assets/images/hero/tbg.jpg";
+import img1 from "../assets/images/service/led1.jpg"
+import img2 from "../assets/images/service/led.avif"
+import img3 from "../assets/images/service/bed.jpg"
+import img4 from "../assets/images/service/shadow.jpg"
+import img5 from "../assets/images/service/exam.jpg"
+import img6 from "../assets/images/service/stand.avif"
 
 const services = [
   {
     icon: <FaLightbulb className="text-4xl text-[#3A8DFF]" />,
     title: "Surgical Light Manufacturer",
     description: "Leading manufacturers of premium surgical lights with optimal illumination for modern operating rooms.",
-    imgSrc: "https://images.unsplash.com/photo-1606230974666-47d327db6c59"
+    imgSrc: img1 
   },
   {
     icon: <FaRegHospital className="text-4xl text-[#3A8DFF]" />,
     title: "LED OT Light",
     description: "Advanced LED OT lights offering shadowless clarity, energy efficiency, and durability.",
-    imgSrc: "https://images.unsplash.com/photo-1588776814546-b892d18d3a09"
+    imgSrc: img2
   },
   {
     icon: <FaMicroscope className="text-4xl text-[#3A8DFF]" />,
-    title: "LED Surgical Light",
+    title: "Hydrolic Surgical Bed",
     description: "High-performance LED surgical lights designed for precision and safety in critical operations.",
-    imgSrc: "https://images.unsplash.com/photo-1583312041941-7c4477d2c9b2"
+    imgSrc: img3
   },
   {
     icon: <FaSyringe className="text-4xl text-[#3A8DFF]" />,
-    title: "Operating Room Light",
+    title: "Operating Room Mobile Light",
     description: "Cutting-edge operating room lighting systems to enhance procedural visibility and comfort.",
-    imgSrc: "https://images.unsplash.com/photo-1579154204601-01592df6c525"
+    imgSrc: img6
   },
   {
     icon: <FaHeartbeat className="text-4xl text-[#3A8DFF]" />,
     title: "Medical Examination Light",
     description: "Precise medical examination lights ensuring optimal brightness for accurate diagnostics.",
-    imgSrc: "https://images.unsplash.com/photo-1588774068579-cf7e16e2f393"
+    imgSrc: img5
   },
   {
     icon: <FaStar className="text-4xl text-[#3A8DFF]" />,
     title: "Shadowless Surgical Light",
     description: "Shadowless lighting technology minimizing obstructions and providing uniform illumination.",
-    imgSrc: "https://images.unsplash.com/photo-1585218355662-36f27f8b1b33"
+    imgSrc: img4
   },
 ];
 

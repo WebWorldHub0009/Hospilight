@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import VisitorCounter from "./VisitorCounter";
 import Translator from "./Translator";
 import footerBg from "../assets/images/hero/tbg.jpg";
+import logo from "../assets/logom.png"
 
 const containerVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -45,7 +46,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-sm z-10 relative">
         {/* About */}
         <div className="flex flex-col space-y-3">
-          <img src={""} alt="Hospilight Logo" className="w-[80px] md:w-[120px]" />
+          <img src={logo} alt="Hospilight Logo" className="w-[80px] md:w-[120px]" />
           <h4 className="text-gray-900 font-semibold mb-2">About Hospilight</h4>
           <p className="leading-relaxed">
             Hospilight is a trusted name in medical lighting solutions. We specialize in manufacturing and supplying premium surgical lights, LED OT lights, examination lights, and hospital equipment designed for performance, reliability, and precision in healthcare environments.
@@ -55,7 +56,7 @@ export default function Footer() {
               href="https://www.justdial.com/Delhi/Hospi-Light-India-Bawana/011PXX11-XX11-171008174518-I4N4_BZDET?rStatus=1&pgfrom=b2b_catalogue"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-4 py-2 border border-pink-500 text-pink-600 rounded hover:bg-pink-500 hover:text-white transition duration-300 text-sm font-medium"
+              className="inline-block px-4 py-2 border border-red-700 text-red-700 rounded hover:text-red-800  transition duration-300 text-sm font-medium"
             >
               View on JustDial
             </a>
@@ -74,7 +75,7 @@ export default function Footer() {
               ["Contact Us", "/contact"],
             ].map(([text, link], i) => (
               <li key={i}>
-                <Link to={link} className="hover:text-pink-500 transition duration-300">
+                <Link to={link} className="hover:text-red-700 transition duration-300">
                   {text}
                 </Link>
               </li>
@@ -85,9 +86,9 @@ export default function Footer() {
             <li>
               <a
                 href="mailto:hospilightindia@gmail.com"
-                className="flex items-center space-x-2 hover:text-pink-500 transition duration-300"
+                className="flex items-center space-x-2 hover:text-red-700 transition duration-300"
               >
-                <FaEnvelope className="text-pink-500" />
+                <FaEnvelope className="text-red-700" />
                 <span>hospilightindia@gmail.com</span>
               </a>
             </li>
@@ -110,7 +111,7 @@ export default function Footer() {
               "Operation Theatre Light",
             ].map((service, i) => (
               <li key={i}>
-                <Link to="/services" className="hover:text-pink-500 transition duration-300">
+                <Link to="/services" className="hover:text-red-700 transition duration-300">
                   {service}
                 </Link>
               </li>
@@ -133,17 +134,17 @@ export default function Footer() {
             <div><Translator /></div>
           </div>
           <div className="mt-6 flex space-x-4">
-            <a href="https://www.linkedin.com/in/hospi-light-india-141913211/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition"><FaLinkedinIn size={20} /></a>
-            <a href="https://www.instagram.com/hospilight/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition"><FaInstagram size={20} /></a>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition"><FaFacebookF size={20} /></a>
-            <a href="https://www.youtube.com/channel/UC4bki-w-01xeBfnePgdi6AQ" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition"><FaYoutube size={20} /></a>
-            <a href="https://in.pinterest.com/hospieuips/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition"><FaPinterest size={20} /></a>
+            <a href="https://www.linkedin.com/in/hospi-light-india-141913211/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700 transition"><FaLinkedinIn size={20} /></a>
+            <a href="https://www.instagram.com/hospilight/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700 transition"><FaInstagram size={20} /></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700 transition"><FaFacebookF size={20} /></a>
+            <a href="https://www.youtube.com/channel/UC4bki-w-01xeBfnePgdi6AQ" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700 transition"><FaYoutube size={20} /></a>
+            <a href="https://in.pinterest.com/hospieuips/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-red-700 transition"><FaPinterest size={20} /></a>
           </div>
         </div>
       </div>
 
       {/* Bottom Footer */}
-      <div className="mt-10 text-center text-xs text-gray-500 border-t border-gray-300 pt-6 space-y-2 relative z-10">
+      <div className="mt-10 text-center text-xs text-gray-700 border-t border-gray-300 pt-6 space-y-2 relative z-10">
         <VisitorCounter />
         <p>© {new Date().getFullYear()} Hospilight India. All rights reserved.</p>
         <p>

@@ -78,7 +78,7 @@ const Contact = () => {
     <div className="px-8 py-12 md:w-1/2 w-full">
       <form className="w-full" action="https://formsubmit.co/satyam@hospi" method="POST">
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://hospilight.in/thank-you" />
+        <input type="hidden" name="_next" value="http://ledotlights.in" />
 
         <div className="flex flex-col md:flex-row gap-8 mb-8">
           <div className="flex-1">

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import hero1 from "../assets/images/hero/l1.avif";
 import hero2 from "../assets/images/hero/l2.avif";
 import hero3 from "../assets/images/hero/l3.avif";
+import pdf from "../assets/images/pdf/catalouge.pdf"
 
 const slides = [
   {
@@ -55,7 +56,7 @@ export default function HospilightHero() {
       </AnimatePresence>
 
       {/* Glass Blur */}
-      <div className="absolute inset-0 bg-black/50 md:bg-black/30 backdrop-blur-[5px] z-10"></div>
+      <div className="absolute inset-0 bg-black/50 md:bg-black/30 backdrop-blur-[2px] z-10"></div>
 
       {/* Content */}
       <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-center px-6 md:px-16 text-white">
@@ -84,12 +85,20 @@ export default function HospilightHero() {
           transition={{ duration: 1, delay: 0.6 }}
           className="mt-8"
         >
-          <Link to="/about">
-            <button className="px-6 py-3 text-md md:text-md font-semibold rounded-full uppercase transition-all duration-300
-            bg-gradient-to-r from-[#3A8DFF] to-[#38C172] hover:from-[#38C172] hover:to-[#3A8DFF] text-white shadow-xl hover:shadow-[0_8px_24px_rgba(58,141,255,0.7)]">
-              Explore Hospilight
-            </button>
-          </Link>
+        <a
+  href={pdf}
+  download="Hospilight-Brochure.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button
+    className="px-6 py-3 cursor-pointer text-md md:text-md font-semibold rounded-full transition-all duration-300
+    bg-gradient-to-r from-[#3A8DFF] to-[#38C172] hover:from-[#38C172] hover:to-[#3A8DFF] text-white ]"
+  >
+    Get Broucher
+  </button>
+</a>
+
         </motion.div>
       </div>
     </section>
