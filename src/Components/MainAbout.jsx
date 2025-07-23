@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../assets/images/About/aboutbg.avif";
+import bgImage from "../assets/images/ABout/aboutbg.avif";
 import obj from "../assets/images/ABout/ct.png";
 import { motion } from "framer-motion";
 
