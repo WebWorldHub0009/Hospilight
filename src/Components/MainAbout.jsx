@@ -32,7 +32,7 @@ const MainAbout = () => {
         >
           {/* Hero Badge */}
           <span className="inline-block bg-[#3A8DFF]/20 text-[#3A8DFF] text-xs font-semibold px-4 py-1 rounded-full mb-4">
-            India’s Trusted Surgical Light Manufacturer
+            India’s Most Trusted Surgical Light Manufacturer
           </span>
 
           <p className="text-[#38C172] text-sm font-semibold tracking-wide uppercase mb-3">

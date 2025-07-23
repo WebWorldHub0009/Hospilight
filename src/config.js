@@ -1,2 +1,2 @@
 // export const BASE_URL = "http://localhost:3000/api";
-export const BASE_URL = "api.ledotlights.in";
+export const BASE_URL = "https://api.ledotlights.in";
