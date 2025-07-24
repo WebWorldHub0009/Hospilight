@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
     Object.entries(form).forEach(([key, value]) => formData.append(key, value));
     formData.append("image", image);
 
-    const res = await fetch(`${BASE_URL}/api/products/create`, {
+    const res = await fetch(`${BASE_URL}/products/create`, {
       method: "POST",
       headers: { Authorization: `Bearer ${token}` },
       body: formData,
